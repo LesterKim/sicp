@@ -1,0 +1,12 @@
+(define (pascal row index)
+	(cond ((or (= index 1)
+			   (= index row))
+		   1)
+		  (else (+ (pascal (- row 1) (- index 1))
+		  		   (pascal (- row 1) index)))
+		   ))
+
+(pascal 1 1)
+(pascal 5 1)
+(pascal 5 3)
+(pascal 6 4)

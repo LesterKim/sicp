@@ -15,6 +15,7 @@
 	(make-vect (* s (xcor-vect v))
 			   (* s (ycor-vect v))))
 
+; Example
 (define v (make-vect .25 .75))
 (define v2 (make-vect .5 .5))
 
